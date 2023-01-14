@@ -3,7 +3,7 @@ from textwrap import wrap
 
 rows="ABCDEFGHI"
 cols="123456789"
-'''def ViewGrid(grid):
+def ViewGrid(grid):
     """nice visual output of a sudoku grid. grid provided as single string"""
     htmlstr="<style>tr.myContainer :nth-child(3n+0) {border-right:1px solid black} tr.myContainer :last-child {border-right: 0px}</style><table>"
     for row,rowdata in zip(rows,wrap(grid,9)):
@@ -13,7 +13,7 @@ cols="123456789"
             htmlstr+="<tr class='myContainer'><td>"
         htmlstr+="</td><td>".join(list(rowdata))+"</td></tr>"
     htmlstr+="</table>"
-    display(HTML(htmlstr))'''
+    display(HTML(htmlstr))
 
 #Insert your function def statements, preconditions, postconditions and tests here
 # YOUR CODE HERE
